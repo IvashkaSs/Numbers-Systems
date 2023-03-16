@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="conv2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lFy-MF-2Gj">
+                                <rect key="frame" x="0.0" y="267" width="393" height="551"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XWS-zd-C4q">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="538"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9O-sm-mB6">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="538"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Lwa-FU-chY">
+                                                        <rect key="frame" x="10" y="10" width="369" height="528"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOE-VJ-BcY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="369" height="60"/>
+                                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="Qy9-Z2-HvK"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title=" 🔟 → 2️⃣"/>
+                                                                <connections>
+                                                                    <action selector="fromDecimalToBinary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzc-zg-jUR"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po0-lA-qGJ">
+                                                                <rect key="frame" x="0.0" y="78" width="369" height="60"/>
+                                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                <color key="tintColor" red="0.66662408399999995" green="0.66666668650000005" blue="0.2046502956" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="🔟 →  8️⃣"/>
+                                                                <connections>
+                                                                    <action selector="fromDecimalToOctal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0zo-nN-EKh"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJF-xd-X6x">
+                                                                <rect key="frame" x="0.0" y="156" width="369" height="60"/>
+                                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                <color key="tintColor" red="0.89389365170000001" green="0.4942823033" blue="0.78697755199999997" alpha="0.68120216840000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="🔟  → 1️⃣6️⃣"/>
+                                                                <connections>
+                                                                    <action selector="fromDecimalToHex:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Alm-Rs-8BX"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfz-4u-Mfa">
+                                                                <rect key="frame" x="0.0" y="234" width="369" height="60"/>
+                                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                <color key="tintColor" red="0.89389365170000001" green="0.4942823033" blue="0.78697755199999997" alpha="0.68120216840000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="2️⃣ → 🔟"/>
+                                                                <connections>
+                                                                    <action selector="fromBinaryToDecimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z9n-vR-kUD"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tP2-HG-StD">
+                                                                <rect key="frame" x="0.0" y="312" width="369" height="60"/>
+                                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                <color key="tintColor" red="0.80977279049999995" green="0.88476857149999999" blue="0.89389365170000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="8️⃣ → 🔟"/>
+                                                                <connections>
+                                                                    <action selector="fromOctalToDecimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Taw-Ux-nvE"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG3-JR-8U2">
+                                                                <rect key="frame" x="0.0" y="390" width="369" height="60"/>
+                                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="1️⃣6️⃣ → 🔟"/>
+                                                                <connections>
+                                                                    <action selector="fromHexToDecimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F9l-w4-79k"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQt-FF-fP8">
+                                                                <rect key="frame" x="0.0" y="468" width="369" height="60"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                                                <connections>
+                                                                    <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zA2-Ab-gax"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="OQt-FF-fP8" firstAttribute="height" secondItem="oOE-VJ-BcY" secondAttribute="height" id="KJh-7w-Eoc"/>
+                                                            <constraint firstItem="wG3-JR-8U2" firstAttribute="height" secondItem="oOE-VJ-BcY" secondAttribute="height" id="LG4-2O-QWE"/>
+                                                            <constraint firstItem="yJF-xd-X6x" firstAttribute="height" secondItem="oOE-VJ-BcY" secondAttribute="height" id="P8H-u0-40W"/>
+                                                            <constraint firstItem="po0-lA-qGJ" firstAttribute="height" secondItem="oOE-VJ-BcY" secondAttribute="height" id="Su6-qS-p20"/>
+                                                            <constraint firstItem="Gfz-4u-Mfa" firstAttribute="height" secondItem="oOE-VJ-BcY" secondAttribute="height" id="dP0-Se-lIU"/>
+                                                            <constraint firstItem="tP2-HG-StD" firstAttribute="height" secondItem="oOE-VJ-BcY" secondAttribute="height" id="wNU-Kf-pVl"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Lwa-FU-chY" firstAttribute="top" secondItem="j9O-sm-mB6" secondAttribute="top" constant="10" id="D9e-h8-ME5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Lwa-FU-chY" secondAttribute="trailing" constant="14" id="MmF-ZC-7iy"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Lwa-FU-chY" secondAttribute="bottom" id="nDb-nd-yVH"/>
+                                                    <constraint firstItem="Lwa-FU-chY" firstAttribute="leading" secondItem="j9O-sm-mB6" secondAttribute="leading" constant="10" id="xYx-xe-QIJ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XWS-zd-C4q" firstAttribute="trailing" secondItem="CSW-EJ-vPQ" secondAttribute="trailing" id="2LO-Xk-9hz"/>
+                                    <constraint firstItem="XWS-zd-C4q" firstAttribute="bottom" secondItem="CSW-EJ-vPQ" secondAttribute="bottom" id="6Yl-dr-5fn"/>
+                                    <constraint firstItem="XWS-zd-C4q" firstAttribute="leading" secondItem="CSW-EJ-vPQ" secondAttribute="leading" id="Cq7-4S-HkX"/>
+                                    <constraint firstItem="CSW-EJ-vPQ" firstAttribute="top" secondItem="XWS-zd-C4q" secondAttribute="top" id="Kms-62-Tdt"/>
+                                    <constraint firstItem="XWS-zd-C4q" firstAttribute="width" secondItem="6Gm-Yj-FyK" secondAttribute="width" id="j28-Ev-za5"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="CSW-EJ-vPQ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="6Gm-Yj-FyK"/>
+                            </scrollView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ВВЕДИТЕ ЧИСЛО" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfe-b3-vy9">
+                                <rect key="frame" x="0.0" y="225" width="393" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    </view>
+                    <connections>
+                        <outlet property="addNumberTextField" destination="bfe-b3-vy9" id="cAJ-Ps-xtH"/>
+                        <outlet property="scrollView" destination="lFy-MF-2Gj" id="KRU-T4-N5r"/>
+                        <outletCollection property="buttonCollection" destination="wG3-JR-8U2" collectionClass="NSMutableArray" id="eXS-Jw-DrO"/>
+                        <outletCollection property="buttonCollection" destination="OQt-FF-fP8" collectionClass="NSMutableArray" id="znZ-Sx-EgA"/>
+                        <outletCollection property="buttonCollection" destination="yJF-xd-X6x" collectionClass="NSMutableArray" id="Gcv-gC-5W6"/>
+                        <outletCollection property="buttonCollection" destination="tP2-HG-StD" collectionClass="NSMutableArray" id="rfm-OP-Viq"/>
+                        <outletCollection property="buttonCollection" destination="oOE-VJ-BcY" collectionClass="NSMutableArray" id="2sD-Qg-Nb0"/>
+                        <outletCollection property="buttonCollection" destination="Gfz-4u-Mfa" collectionClass="NSMutableArray" id="PkR-3U-gnZ"/>
+                        <outletCollection property="buttonCollection" destination="po0-lA-qGJ" collectionClass="NSMutableArray" id="02q-3o-oOq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45.038167938931295" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
